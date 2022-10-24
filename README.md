@@ -2,4 +2,4 @@
 
 ## Rust-Learning
 
-- [Rust 学习笔记1](Rust-learning/Rustlearning1.md)
+- [Rust 学习笔记1](Rust-learning/RustLearning1.md)

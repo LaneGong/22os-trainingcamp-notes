@@ -2,17 +2,29 @@
 
 ## 本地运行环境+Github Classroom
 
-1. 按照[指示](https://github.com/LearningOS/rust-based-os-comp2022/blob/main/scheduling.md) a、b、c步骤创建好基于rustlings加githubclassroom的实验仓库
+1. 按照[指示](https://github.com/LearningOS/rust-based-os-comp2022/blob/main/scheduling.md) a、b、c步骤创建好基于rustlings加githubclassroom的实验仓库(os2edu版本)
+
 2. 在本地执行`git clone`（建议ssh）
-3. `cd 实验仓库` 并执行如下命令 `make setupclassroom` 完成自动评分配置
 
-![image-20221021130424443](../Fig/rust1.png)
+3. `cd` 进实验仓库，按照下需步骤安装rustlings
 
-> ⚠️本地已有rust环境，没有可以自己装。在线环境可以执行`sudo make codespaces_setenv`
+   ![image-20221114130318873](../Fig/rust1.png)
 
-4. 基于上述步骤，在本地完成几个实验即可push到仓库中 => 实测应该是要全部完成之后才会有评分(应该是`rustlings watch`导致的，直接循环所有实验)
+   > ⚠️安装过程中可能遇到如下问题：
+   >
+   > `curl: (7) Failed to connect to raw.githubusercontent.com port 443: Connection refused`
+   >
+   > 解决方法指路=>https://github.com/hawtim/hawtim.github.io/issues/10
 
-   ![image-20221023134710495](../Fig/rust2.png)
+4. 基于上述步骤，在本地执行`rustlings watch`便可查看要完成的实验和结果是否通过，最后完成一部分实验就可以push到仓库中进行自动评分。
+
+   > 删除//I AM NOT DONE，rustlings watch就会跳转到下一题
+   
+   ![image-20221114131723369](../Fig/rust2.png)
+   
+   push命令：`git add.` `git commit -m "update"` `git push`
+   
+   ![image-20221114132437644](../Fig/rust3.png)
 
 ## Rust语言
 
@@ -82,7 +94,7 @@ fn main() { //fn => function
 
 ### 入门小项目
 
-![image-20221023143118011](../Fig/rust3.png)
+![image-20221023143118011](../Fig/rust4.png)
 
 ```rust
 use std::io;
